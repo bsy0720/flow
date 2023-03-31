@@ -1470,7 +1470,15 @@
     flex-wrap: nowrap;
     margin: 30px auto 0;
     padding: 0 50px 60px;
+    overflow-x: scroll;
   }
+  .sc-tool .tool-wrap {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.sc-tool .tool-wrap::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
   .sc-tool .tool-box{
     flex-shrink: 0;
     width: 150px;
@@ -1572,7 +1580,7 @@
     padding: 40px 20px;
   }
   .sc-top{
-    height: 720px;
+    height: 790px;
   }
   .sc-top .inner{
     padding: 80px 20px;
